@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="VHVoeXMxNkE6OTISGV99FGU2ISk4Q3cbLgMYHwBIVyQRNCEUS2lCHg==">
+    <title>Đăng nhập</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Import and configure the Firebase SDK -->
+    <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+    <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+
+</head>
+
+<body class="login-bg">
+
+<div class="header">
+    <div class="row header-content">
+        <div class="col-sm-4">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>
+                    <a href="/"><img src="/images/logo-ikyhome-white.png" alt="IKY GPS" style=""></a>
+                </h1>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="navbar navbar-inverse" role="banner">
+                                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                                    </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-content container">
+    
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <div class="login-wrapper">
+            <div class="box">
+                <div class="content-wrap">
+                    <p class="logo">
+                        <img src="/images/logo-iky.png" alt="IKY GPS" style=";">                    
+                    </p>
+                    <h6>Đăng nhập</h6>                    
+                                          
+                    <div class=" field-loginform-username required">
+                      <input type="text" id="username" class="form-control" name="username" autofocus aria-required="true">
+                    </div>
+
+                    <div class=" field-loginform-password required">
+                      <input type="password" id="password" class="form-control" name="password" aria-required="true">
+                    </div>
+
+                    <div class=" field-loginform-rememberme">
+                      <div class="checkbox">
+                        <label>
+                          <input type="hidden" name="LoginForm[rememberMe]" value="0">
+                          <input type="checkbox" id="loginform-rememberme" name="LoginForm[rememberMe]" value="1">
+                          <label for="loginform-rememberme">Tự động đăng nhập</label>
+                          <p class="help-block help-block-error"></p>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="action">
+                        <button class="btn btn-primary signup" id="login-button">Đăng nhập</button>                    
+                    </div>
+                                
+                </div>
+            </div>
+            <div class="already">
+                <p>Bạn quên mật khẩu?</p>
+                <a href="/request-password-reset">Tại đây</a>            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>
